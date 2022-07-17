@@ -23,8 +23,8 @@ export const useIdentity = defineStore('identity', {
     }
   },
   getters: {
-    fullName() {
-      return `${this.firstName} ${this.lastName}`;
+    fullName: (state) => {
+      return `${state.firstName} ${state.lastName}`;
     }
   }
 });
