@@ -32,13 +32,7 @@ export default defineNuxtConfig({
   },
 
   // css
-  css: [
-    'virtual:windi-base.css',
-    'virtual:windi-components.css',
-    'virtual:windi-utilities.css',
-    '~/assets/sass/vendor.scss',
-    '~/assets/sass/app.scss'
-  ],
+  css: ['~/assets/sass/vendor.scss', '~/assets/sass/app.scss'],
 
   // plugins
   plugins: ['~/plugins/navbar.ts'],
@@ -50,7 +44,7 @@ export default defineNuxtConfig({
 
   // modules
   modules: [
-    'nuxt-windicss',
+    '@nuxtjs/tailwindcss',
     '@intlify/nuxt3',
     '@vueuse/nuxt',
     '@nuxt/content',
@@ -92,23 +86,13 @@ export default defineNuxtConfig({
     }
   },
 
+  tailwindcss: {
+    // Options
+  },
+
   // vueuse
   vueuse: {
     ssrHandlers: true
-  },
-
-  // windicss
-  windicss: {
-    analyze: {
-      analysis: {
-        interpretUtilities: false
-      },
-      server: {
-        port: 4000,
-        open: false
-      }
-    },
-    scan: true
   },
 
   // content
