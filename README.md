@@ -142,7 +142,7 @@ This workspace including custom snippets for VSCode.
 
 ### Styles
 
-Tailwindcss import managed by windicss.
+Tailwindcss.
 and you can add custom styles in :
 
 ```shell

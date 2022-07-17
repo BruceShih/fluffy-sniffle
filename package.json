@@ -1,12 +1,12 @@
 {
-  "name": "nuxt3-awesome-starter",
+  "name": "website",
   "version": "0.1.0",
-  "description": "a Nuxt 3 starter template or boilerplate with a lot of useful features. Nuxt3 + Tailwindcss 3",
+  "description": "My personal website",
   "repository": {
     "type": "git",
-    "url": "git://github.com/viandwi24/nuxt3-awesome-starter"
+    "url": "https://github.com/BruceShih/website.git"
   },
-  "author": "viandwi24",
+  "author": "Bruce Shih",
   "license": "MIT",
   "scripts": {
     "build": "nuxt build",
@@ -25,7 +25,6 @@
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
-    "@headlessui/vue": "1.6.5",
     "@iconify/json": "^2.1.70",
     "@intlify/nuxt3": "0.2.2",
     "@nuxt/content": "^2.0.1",
