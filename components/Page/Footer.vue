@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import p from './../../package.json'
-import { IApp } from '~/utils/app'
-const app = useState<IApp>('app')
+import p from './../../package.json';
+import { IApp } from '~/utils/app';
+const app = useState<IApp>('app');
 </script>
 
 <template>

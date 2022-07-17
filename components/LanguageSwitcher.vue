@@ -5,8 +5,8 @@ import {
   ListboxLabel,
   ListboxOptions,
   ListboxOption
-} from '@headlessui/vue'
-import { availableLocales } from '~/utils/lang'
+} from '@headlessui/vue';
+import { availableLocales } from '~/utils/lang';
 
 // micro compiler
 const props = defineProps({
@@ -14,11 +14,11 @@ const props = defineProps({
     type: String,
     default: 'dropdown-right-top'
   }
-})
+});
 
 // state
-const currentStyle = toRef(props, 'type')
-const localeSetting = useState<string>('locale.setting')
+const currentStyle = toRef(props, 'type');
+const localeSetting = useState<string>('locale.setting');
 </script>
 
 <template>

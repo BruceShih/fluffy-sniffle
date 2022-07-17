@@ -1,15 +1,15 @@
 <script lang="ts" setup>
-import { IApp } from '~/utils/app'
+import { IApp } from '~/utils/app';
 
 export interface IMenuItem {
-  type: 'link' | 'button'
-  text: string
-  href?: any
-  route?: any
+  type: 'link' | 'button';
+  text: string;
+  href?: any;
+  route?: any;
 }
 
-const { t } = useLang()
-const app = useState<IApp>('app')
+const { t } = useLang();
+const app = useState<IApp>('app');
 const menus = computed((): IMenuItem[] => [
   { type: 'link', text: t('pages.blank.nav'), route: { name: 'blank' } },
   { type: 'link', text: t('pages.test.nav'), route: { name: 'test' } },
@@ -21,7 +21,7 @@ const menus = computed((): IMenuItem[] => [
     text: t('pages.dashboard.nav'),
     route: { name: 'dashboard' }
   }
-])
+]);
 </script>
 
 <template>

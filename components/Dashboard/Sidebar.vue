@@ -7,18 +7,18 @@ export default defineComponent({
     }
   },
   setup() {
-    const sidebar = ref(null)
+    const sidebar = ref(null);
 
     onMounted(() => {
       // const { onScroll } = useSticky(sidebar.value, -1000)
       // setTimeout(() => onScroll(), 50)
-    })
+    });
 
     return {
       sidebar
-    }
+    };
   }
-})
+});
 </script>
 
 <template>

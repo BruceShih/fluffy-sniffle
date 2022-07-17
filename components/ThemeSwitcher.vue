@@ -5,8 +5,8 @@ import {
   ListboxLabel,
   ListboxOptions,
   ListboxOption
-} from '@headlessui/vue'
-import { IThemeSettingOptions, availableThemes } from '~/utils/theme'
+} from '@headlessui/vue';
+import { IThemeSettingOptions, availableThemes } from '~/utils/theme';
 
 // micro compiler
 const props = defineProps({
@@ -14,11 +14,11 @@ const props = defineProps({
     type: String,
     default: 'dropdown-right-top'
   }
-})
+});
 
 // state
-const themeSetting = useState<IThemeSettingOptions>('theme.setting')
-const currentStyle = toRef(props, 'type')
+const themeSetting = useState<IThemeSettingOptions>('theme.setting');
+const currentStyle = toRef(props, 'type');
 </script>
 
 <template>

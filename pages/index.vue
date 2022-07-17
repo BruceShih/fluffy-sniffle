@@ -1,16 +1,16 @@
 <script lang="ts" setup>
-import { computed } from 'vue'
+import { computed } from 'vue';
 
 // composable
-const { t } = useLang()
+const { t } = useLang();
 
 // meta
 definePageMeta({
   layout: 'page'
-})
+});
 
 // vars
-const titlesText = computed<string[]>(() => t('pages.index.title').split('[]'))
+const titlesText = computed<string[]>(() => t('pages.index.title').split('[]'));
 const leadingsText = computed(() => [
   {
     text: titlesText.value[0],
@@ -30,7 +30,7 @@ const leadingsText = computed(() => [
     endColor: '#F9CB28',
     delay: 4
   }
-])
+]);
 </script>
 
 <template>

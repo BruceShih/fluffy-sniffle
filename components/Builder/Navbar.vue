@@ -1,25 +1,25 @@
 <script lang="ts" setup>
-import { IApp } from '~/utils/app'
+import { IApp } from '~/utils/app';
 
-const app = useState<IApp>('app')
-const navbar = ref(null)
-const showDrawer = useState<boolean>('navbar.showDrawer', () => false)
-const showOptions = useState<boolean>('navbar.showOptions', () => false)
+const app = useState<IApp>('app');
+const navbar = ref(null);
+const showDrawer = useState<boolean>('navbar.showDrawer', () => false);
+const showOptions = useState<boolean>('navbar.showOptions', () => false);
 
 onMounted(() => {
-  if (!navbar.value) return
-  const { onScroll } = useSticky(navbar.value, 0)
-  setTimeout(() => onScroll(), 50)
-})
+  if (!navbar.value) return;
+  const { onScroll } = useSticky(navbar.value, 0);
+  setTimeout(() => onScroll(), 50);
+});
 
-const toggleDrawer = () => (showDrawer.value = !showDrawer.value)
+const toggleDrawer = () => (showDrawer.value = !showDrawer.value);
 const toggleOptions = (show?: boolean) => {
   if (show) {
-    showOptions.value = show
+    showOptions.value = show;
   } else {
-    showOptions.value = !showOptions.value
+    showOptions.value = !showOptions.value;
   }
-}
+};
 </script>
 
 <template>

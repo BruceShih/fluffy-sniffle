@@ -1,15 +1,15 @@
 <script lang="ts" setup>
-import { useCounter } from '~/stores/counter'
-import { useIdentity } from '~/stores/identity'
-import { capitalize } from '~/utils/str'
+import { useCounter } from '~/stores/counter';
+import { useIdentity } from '~/stores/identity';
+import { capitalize } from '~/utils/str';
 
 // composable
-const { t } = useLang()
+const { t } = useLang();
 
 // compiler macro
 definePageMeta({
   layout: 'page'
-})
+});
 useHead(() => ({
   title: capitalize(t('pages.test.title')),
   meta: [
@@ -18,10 +18,10 @@ useHead(() => ({
       content: t('pages.test.description')
     }
   ]
-}))
+}));
 
-const counter = useCounter()
-const identity = useIdentity()
+const counter = useCounter();
+const identity = useIdentity();
 </script>
 
 <template>

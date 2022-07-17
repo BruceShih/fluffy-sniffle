@@ -1,11 +1,11 @@
-import { defineNuxtConfig } from 'nuxt'
-import { IntlifyModuleOptions } from '@intlify/nuxt3'
-import UnpluginComponentsVite from 'unplugin-vue-components/vite'
-import IconsResolver from 'unplugin-icons/resolver'
+import { defineNuxtConfig } from 'nuxt';
+import { IntlifyModuleOptions } from '@intlify/nuxt3';
+import UnpluginComponentsVite from 'unplugin-vue-components/vite';
+import IconsResolver from 'unplugin-icons/resolver';
 
 declare module '@nuxt/schema' {
   interface NuxtConfig {
-    intlify?: IntlifyModuleOptions
+    intlify?: IntlifyModuleOptions;
   }
 }
 
@@ -104,4 +104,4 @@ export default defineNuxtConfig({
   // typescript: {
   //   shim: false
   // }
-})
+});

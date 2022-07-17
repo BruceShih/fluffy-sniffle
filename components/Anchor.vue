@@ -13,11 +13,11 @@ const props = defineProps({
     type: String,
     default: ''
   }
-})
+});
 
 // state
-const href = toRef(props, 'href')
-const to = toRef(props, 'to')
+const href = toRef(props, 'href');
+const to = toRef(props, 'to');
 </script>
 
 <template>
