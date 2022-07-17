@@ -4,7 +4,7 @@ import {
   ListboxButton,
   ListboxLabel,
   ListboxOptions,
-  ListboxOption,
+  ListboxOption
 } from '@headlessui/vue'
 import { IThemeSettingOptions, availableThemes } from '~/utils/theme'
 
@@ -12,8 +12,8 @@ import { IThemeSettingOptions, availableThemes } from '~/utils/theme'
 const props = defineProps({
   type: {
     type: String,
-    default: 'dropdown-right-top',
-  },
+    default: 'dropdown-right-top'
+  }
 })
 
 // state
@@ -56,7 +56,7 @@ const currentStyle = toRef(props, 'type')
             'text-sky-500 bg-gray-100 dark:bg-gray-600/30':
               themeSetting === theme.key,
             'hover:bg-gray-50 dark:hover:bg-gray-700/30':
-              themeSetting !== theme.key,
+              themeSetting !== theme.key
           }"
         >
           <span class="text-sm mr-2 flex items-center">

@@ -6,16 +6,16 @@ const { t } = useLang()
 
 // compiler macro
 definePageMeta({
-  layout: 'page',
+  layout: 'page'
 })
 useHead(() => ({
   title: capitalize(t('pages.post.title')),
   meta: [
     {
       name: 'description',
-      content: t('pages.post.description'),
-    },
-  ],
+      content: t('pages.post.description')
+    }
+  ]
 }))
 </script>
 

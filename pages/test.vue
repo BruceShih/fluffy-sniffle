@@ -8,16 +8,16 @@ const { t } = useLang()
 
 // compiler macro
 definePageMeta({
-  layout: 'page',
+  layout: 'page'
 })
 useHead(() => ({
   title: capitalize(t('pages.test.title')),
   meta: [
     {
       name: 'description',
-      content: t('pages.test.description'),
-    },
-  ],
+      content: t('pages.test.description')
+    }
+  ]
 }))
 
 const counter = useCounter()

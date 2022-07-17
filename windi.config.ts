@@ -22,9 +22,9 @@ const MyTheme = {
       '600': '#2C7D59',
       '700': '#1E533B',
       '800': '#0F2A1E',
-      '900': '#000000',
-    },
-  },
+      '900': '#000000'
+    }
+  }
 }
 
 export default defineConfig({
@@ -38,28 +38,28 @@ export default defineConfig({
       './pages/**/*.vue',
       './plugins/**/*.{js,ts}',
       './utils/**/*.{js,ts}',
-      './app.vue',
-    ],
+      './app.vue'
+    ]
   },
   theme: {
     extend: {
       maxWidth: {
-        '8xl': '90rem',
+        '8xl': '90rem'
       },
       colors: {
         primary: MyTheme.colors.green,
-        green: MyTheme.colors.green,
-      },
-    },
+        green: MyTheme.colors.green
+      }
+    }
   },
   shortcuts: {
     'light-img': 'block dark:hidden',
-    'dark-img': 'hidden dark:block',
+    'dark-img': 'hidden dark:block'
   },
   plugins: [
     // filters plugin require for navbar blur
     FiltersPlugin as Plugin,
     TypographyPlugin as Plugin,
-    AspectRatioPlugin as Plugin,
-  ] as Plugin[],
+    AspectRatioPlugin as Plugin
+  ] as Plugin[]
 })

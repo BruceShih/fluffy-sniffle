@@ -2,7 +2,7 @@ export enum Size {
   SMALL = 'sm',
   MEDIUM = 'md',
   LARGE = 'lg',
-  EXTRA_LARGE = 'xl',
+  EXTRA_LARGE = 'xl'
 }
 
 export type ScreenSize =
@@ -15,13 +15,13 @@ export const defaultScreenConfig = {
   [Size.SMALL]: 576,
   [Size.MEDIUM]: 768,
   [Size.LARGE]: 992,
-  [Size.EXTRA_LARGE]: 1200,
+  [Size.EXTRA_LARGE]: 1200
 }
 
 export const useScreen = () => {
   const screenSize = reactive({
     width: 0,
-    height: 0,
+    height: 0
   })
 
   const current = ref<ScreenSize>(Size.SMALL)
@@ -32,7 +32,7 @@ export const useScreen = () => {
       [Size.SMALL]: sm,
       [Size.MEDIUM]: md,
       [Size.LARGE]: lg,
-      [Size.EXTRA_LARGE]: xl,
+      [Size.EXTRA_LARGE]: xl
     } = defaultScreenConfig
     if (width < Number(sm)) return Size.SMALL
     if (width < Number(md)) return Size.MEDIUM
@@ -53,7 +53,7 @@ export const useScreen = () => {
       [Size.SMALL]: sm,
       [Size.MEDIUM]: md,
       [Size.LARGE]: lg,
-      [Size.EXTRA_LARGE]: xl,
+      [Size.EXTRA_LARGE]: xl
     } = defaultScreenConfig
     const width = screenSize.width
     if (size === Size.SMALL) return width >= Number(sm)
@@ -78,6 +78,6 @@ export const useScreen = () => {
     getSize,
     screenSize,
     current,
-    higherThan,
+    higherThan
   }
 }

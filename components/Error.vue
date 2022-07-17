@@ -6,12 +6,12 @@ const PageWrapper = resolveComponent('PageWrapper')
 const props = defineProps({
   code: {
     type: Number,
-    default: 400,
+    default: 400
   },
   wrap: {
     type: Boolean,
-    default: false,
-  },
+    default: false
+  }
 })
 
 // computed
@@ -21,13 +21,13 @@ const errorsMap: {
   '400': 'Bad Request',
   '401': 'Unauthorized',
   '403': 'Forbidden',
-  '404': 'Not Found',
+  '404': 'Not Found'
 }
 const error = computed(() => {
   const { code } = props
   return {
     code,
-    message: errorsMap[code.toString()] || 'Unknown Error',
+    message: errorsMap[code.toString()] || 'Unknown Error'
   }
 })
 </script>

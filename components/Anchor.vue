@@ -3,16 +3,16 @@
 const props = defineProps({
   text: {
     type: String,
-    default: '',
+    default: ''
   },
   to: {
     type: [String, Object],
-    default: undefined,
+    default: undefined
   },
   href: {
     type: String,
-    default: '',
-  },
+    default: ''
+  }
 })
 
 // state

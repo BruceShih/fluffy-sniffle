@@ -3,20 +3,20 @@
 const props = defineProps({
   modelValue: {
     type: String,
-    default: '',
+    default: ''
   },
   placeholder: {
     type: String,
-    default: '',
+    default: ''
   },
   size: {
     type: String,
-    default: 'md',
+    default: 'md'
   },
   type: {
     type: String,
-    default: 'default',
-  },
+    default: 'default'
+  }
 })
 const emit = defineEmits(['update:modelValue'])
 const slots = useSlots()
@@ -28,7 +28,7 @@ const paddingStyles = reactive<{
   xs: 'px-1 py-0.5',
   sm: 'px-2 py-1.5',
   md: 'px-4 py-2',
-  lg: 'px-5 py-3',
+  lg: 'px-5 py-3'
 })
 const fontSizeStyles = reactive<{
   [key: string]: string
@@ -36,7 +36,7 @@ const fontSizeStyles = reactive<{
   xs: 'text-xs',
   sm: 'text-sm',
   md: 'text-base',
-  lg: 'text-lg',
+  lg: 'text-lg'
 })
 // const onHoverBorderStyles = reactive<{
 //   [key: string]: string

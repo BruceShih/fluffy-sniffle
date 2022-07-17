@@ -12,23 +12,8 @@ export const availableLocales: ILocales = {
   en: {
     name: 'English',
     iso: 'en',
-    flag: '🇺🇸',
-  },
-  id: {
-    name: 'Bahasa',
-    iso: 'id',
-    flag: '🇮🇩',
-  },
-  ja: {
-    name: '日本語',
-    iso: 'ja',
-    flag: '🇯🇵',
-  },
-  ko: {
-    name: '한국어',
-    iso: 'ko',
-    flag: '🇰🇷',
-  },
+    flag: '🇺🇸'
+  }
 }
 
 export function LanguageManager() {
@@ -72,6 +57,6 @@ export function LanguageManager() {
 
   return {
     localeSetting,
-    init,
+    init
   }
 }

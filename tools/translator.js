@@ -22,7 +22,7 @@ const getFiles = (dir) => {
     if (stat.isFile() && file.endsWith('.yml'))
       files.push({
         path: filePath,
-        lang: file.replace('.yml', ''),
+        lang: file.replace('.yml', '')
       })
   })
   return files
@@ -38,7 +38,7 @@ const translateFile = async (file, locale) => {
       const nextParent = parentKey ? `${parentKey}.${key}` : key
       if (typeof value === 'string') {
         translatedRes[`${nextParent}`] = await translate(value, {
-          to: locale.lang || 'en',
+          to: locale.lang || 'en'
         })
       } else if (typeof value === 'object') {
         await eachCurrLevel(value, `${nextParent}`)

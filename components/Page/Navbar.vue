@@ -19,8 +19,8 @@ const menus = computed((): IMenuItem[] => [
   {
     type: 'button',
     text: t('pages.dashboard.nav'),
-    route: { name: 'dashboard' },
-  },
+    route: { name: 'dashboard' }
+  }
 ])
 </script>
 
@@ -93,7 +93,7 @@ const menus = computed((): IMenuItem[] => [
                 class="flex w-full"
                 :class="{
                   'pb-2 mb-2 border-b border-gray-900/10 dark:border-gray-50/[0.2]':
-                    item.type === 'link',
+                    item.type === 'link'
                 }"
               >
                 <Anchor

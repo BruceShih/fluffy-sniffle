@@ -6,16 +6,16 @@ export type IStyles = 'primary' | 'success' | 'warning' | 'danger'
 const props = defineProps({
   title: {
     type: String,
-    default: undefined,
+    default: undefined
   },
   text: {
     type: String,
-    default: undefined,
+    default: undefined
   },
   type: {
     type: String,
-    default: 'primary',
-  },
+    default: 'primary'
+  }
 })
 
 // styles
@@ -28,7 +28,7 @@ const styles = reactive<{
   warning:
     'dark:from-yellow-500/50 via-gray-200 to-gray-200 dark:via-slate-800 dark:to-slate-800',
   danger:
-    'dark:from-red-500/50 via-gray-200 to-gray-200 dark:via-slate-800 dark:to-slate-800',
+    'dark:from-red-500/50 via-gray-200 to-gray-200 dark:via-slate-800 dark:to-slate-800'
 })
 const textStyles = reactive<{
   [key: string]: string
@@ -36,7 +36,7 @@ const textStyles = reactive<{
   primary: 'text-white',
   success: 'text-green-500',
   warning: 'text-orange-500',
-  danger: 'text-red-500',
+  danger: 'text-red-500'
 })
 
 // selected

@@ -15,8 +15,8 @@ export function AppSetup() {
     name: 'Nuxt 3 Awesome Starter',
     author: {
       name: 'viandwi24',
-      link: 'https://github.com/viandwi24',
-    },
+      link: 'https://github.com/viandwi24'
+    }
   }
   useState('app', () => app)
 
@@ -29,7 +29,7 @@ export function AppSetup() {
   // vue transition bug handle
   const messages = [
     `Uncaught NotFoundError: Failed to execute 'insertBefore' on 'Node': The node before which the new node is to be inserted is not a child of this node.`, // chromium based
-    `NotFoundError: The object can not be found here.`, // safari
+    `NotFoundError: The object can not be found here.` // safari
   ]
   if (typeof window !== 'undefined') {
     window.addEventListener('error', (ev) => {
@@ -44,6 +44,6 @@ export function AppSetup() {
   return {
     app,
     themeManager,
-    languageManager,
+    languageManager
   }
 }

@@ -1,6 +1,6 @@
 <script lang="ts">
 export default defineComponent({
-  layout: 'dashboard',
+  layout: 'dashboard'
 })
 </script>
 

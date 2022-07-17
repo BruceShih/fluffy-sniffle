@@ -24,11 +24,11 @@ export default defineNuxtConfig({
         {
           hid: 'description',
           name: 'description',
-          content: 'Nuxt 3 Awesome Starter',
-        },
+          content: 'Nuxt 3 Awesome Starter'
+        }
       ],
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    },
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    }
   },
 
   // css
@@ -37,7 +37,7 @@ export default defineNuxtConfig({
     'virtual:windi-components.css',
     'virtual:windi-utilities.css',
     '~/assets/sass/vendor.scss',
-    '~/assets/sass/app.scss',
+    '~/assets/sass/app.scss'
   ],
 
   // plugins
@@ -45,23 +45,24 @@ export default defineNuxtConfig({
 
   // build
   build: {
-    transpile: ['@headlessui/vue'],
+    transpile: ['@headlessui/vue']
   },
 
   // modules
-  modules: ['nuxt-windicss', '@intlify/nuxt3', '@vueuse/nuxt', '@nuxt/content'],
+  modules: [
+    'nuxt-windicss',
+    '@intlify/nuxt3',
+    '@vueuse/nuxt',
+    '@nuxt/content',
+    '@pinia/nuxt'
+  ],
 
   // build modules
-  buildModules: [
-    '@nuxtjs/eslint-module',
-    'unplugin-icons/nuxt',
-    '@pinia/nuxt',
-    '@nuxtjs/svg',
-  ],
+  buildModules: ['@nuxtjs/eslint-module', 'unplugin-icons/nuxt', '@nuxtjs/svg'],
 
   // experimental features
   experimental: {
-    reactivityTransform: true,
+    reactivityTransform: true
   },
 
   // auto import components
@@ -74,11 +75,11 @@ export default defineNuxtConfig({
         dts: true,
         resolvers: [
           IconsResolver({
-            prefix: 'Icon',
-          }),
-        ],
-      }),
-    ],
+            prefix: 'Icon'
+          })
+        ]
+      })
+    ]
   },
 
   // localization - i18n config
@@ -87,31 +88,36 @@ export default defineNuxtConfig({
     vueI18n: {
       locale: 'en',
       fallbackLocale: 'en',
-      availableLocales: ['en', 'id', 'ja', 'ko'],
-    },
+      availableLocales: ['en']
+    }
   },
 
   // vueuse
   vueuse: {
-    ssrHandlers: true,
+    ssrHandlers: true
   },
 
   // windicss
   windicss: {
     analyze: {
       analysis: {
-        interpretUtilities: false,
+        interpretUtilities: false
       },
       server: {
         port: 4000,
-        open: false,
-      },
+        open: false
+      }
     },
-    scan: true,
+    scan: true
   },
 
   // content
   content: {
-    base: 'content',
-  },
+    base: 'content'
+  }
+
+  // remember to enabled Take Over Mode
+  // typescript: {
+  //   shim: false
+  // }
 })

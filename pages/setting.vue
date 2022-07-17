@@ -9,16 +9,16 @@ const screen = useScreen()
 
 // compiler macro
 definePageMeta({
-  layout: 'page',
+  layout: 'page'
 })
 useHead(() => ({
   title: capitalize(t('pages.setting.title')),
   meta: [
     {
       name: 'description',
-      content: t('pages.setting.description'),
-    },
-  ],
+      content: t('pages.setting.description')
+    }
+  ]
 }))
 
 // funcs
@@ -84,7 +84,7 @@ const validate = async () => {
                   'md:w-full text-left px-3 py-1.5 rounded py-2.5 text-sm leading-5',
                   selected
                     ? 'font-bold bg-gray-200 dark:bg-slate-700/50 dark:text-gray-200'
-                    : 'text-slate-800 dark:text-gray-400 hover:bg-gray-200 hover:text-slate-900 dark:hover:bg-white/[0.12] dark:hover:text-white',
+                    : 'text-slate-800 dark:text-gray-400 hover:bg-gray-200 hover:text-slate-900 dark:hover:bg-white/[0.12] dark:hover:text-white'
                 ]"
               >
                 General
@@ -96,7 +96,7 @@ const validate = async () => {
                   'md:w-full text-left px-3 py-1.5 rounded py-2.5 text-sm leading-5',
                   selected
                     ? 'font-bold bg-gray-200 dark:bg-slate-700/50 dark:text-gray-200'
-                    : 'text-slate-800 dark:text-gray-400 hover:bg-gray-200 hover:text-slate-900 dark:hover:bg-white/[0.12] dark:hover:text-white',
+                    : 'text-slate-800 dark:text-gray-400 hover:bg-gray-200 hover:text-slate-900 dark:hover:bg-white/[0.12] dark:hover:text-white'
                 ]"
               >
                 Advanced

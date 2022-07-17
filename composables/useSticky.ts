@@ -15,6 +15,6 @@ export const useSticky = (el: HTMLElement, offset: number) => {
   })
 
   return {
-    onScroll,
+    onScroll
   }
 }
